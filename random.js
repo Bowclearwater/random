@@ -1,10 +1,10 @@
-// Math.random() devuelve número aleatorio entre 0 y 1.
+// Math.random() devuelve número aleatorio entre 0 y 100.
 var numero = Math.random();
+numero*=100;
+var str =' MAYOR que 50';
 
-var str =' MAYOR que 0,5';
-
-if (numero <= 0.5){
-  str = ' MENOR que 0,5';
+if (numero <= 50){
+  str = ' MENOR que 50';
 }
 
-console.log('\n' + numero + str + '\n');
+console.log('\n' + numero.toFixed(0) + str + '\n');
